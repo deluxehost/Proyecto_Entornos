@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:date="http://exslt.org/dates-and-times">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style type="text/css">
+          @import url('https://fonts.googleapis.com/css?family=Montserrat');         
+          h1{
+          color: blue;
+          text-align: center;
+          font-weight: bold;
+          text-decoration: green wavy underline;
+          }
+          #tr1{
+          weight: 30%;
+          text-align: center;
+          font-weight: bold;
+          font-size: 120%;
+          
+          }
+          .td1{
+          background-color red;
+          border: 2px;
+          }
+          td{
+          text-align: center;
+          }
+        </style>
+   </head>
+   <body>
+      <h1>RESERVAS</h1>
+      <table>
+         <tr id="tr1">
+            <td class="td1">Codigo de Reserva</td>
+            <td class="td1">Numero Habitaciones</td>
+            <td class="td1">Fecha de Devolucion</td>
+         </tr>
+         <tr>
+            <td>55555</td>
+            <td>33</td>
+            <td style="color:red;">2023-05-09</td>
+         </tr>
+         <tr>
+            <td>99909</td>
+            <td>23</td>
+            <td style="color:green;">2023-05-11</td>
+         </tr>
+      </table>
+   </body>
+</html>

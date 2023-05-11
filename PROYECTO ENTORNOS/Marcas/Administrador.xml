@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<?xml-model href="Administrador.dtd"?>
+<hoteles>
+		<hotel>
+			<id_hotel>00098</id_hotel>
+			<nombre>Hotel Estrellato</nombre>
+			<imagen>estrellato.png</imagen>
+			<pais>España</pais>
+			<caracteristicas>centro de la ciudad, piscina, centro de ocio, teatro</caracteristicas>
+		</hotel>
+		<hotel>
+			<id_hotel>00505</id_hotel>
+			<nombre>La Pisa</nombre>
+			<imagen>pisa.png</imagen>
+			<pais>Italia</pais>
+			<caracteristicas>teatro, centro de ocio </caracteristicas>
+		</hotel>
+		<hotel>
+			<id_hotel>9090</id_hotel>
+			<nombre>Le Baguette</nombre>
+			<imagen>baguette.png</imagen>
+			<pais>Francia</pais>
+			<caracteristicas>centro de la ciudad, centro de ocio</caracteristicas>
+		</hotel>
+
+		<usuarios>	
+			<user tipo="empleado">
+				<Cod_Usu>00101</Cod_Usu>
+				<Contraseña>Ibañez</Contraseña>
+				<Correo>iba@gmail.com</Correo>
+				<Id_hotel>00098</Id_hotel>
+				<datos>
+					<COD_HOTEL>00098</COD_HOTEL>
+					<NOMBRE>Francisco</NOMBRE>
+					<APELLIDO>Ibañez</APELLIDO>
+					<COD_EMPLE>00101</COD_EMPLE>
+					<TELEFONO>999000999</TELEFONO>
+					<SALARIO>1000</SALARIO>
+				</datos>
+			</user>
+
+			<user tipo="empleado">
+				<Cod_Usu>00222</Cod_Usu>
+				<Contraseña>Allan</Contraseña>
+				<Correo>allan@gmail.com</Correo>
+				<Id_hotel>9090</Id_hotel>
+				<datos>
+					<COD_HOTEL>9090</COD_HOTEL>
+					<NOMBRE>Allan</NOMBRE>
+					<APELLIDO>Poe</APELLIDO>
+					<COD_EMPLE>00222</COD_EMPLE>
+					<TELEFONO>000999000</TELEFONO>
+					<SALARIO>1200</SALARIO>
+				</datos>
+			</user>
+				
+			<user tipo=" cliente">
+				<Cod_Usu>03330</Cod_Usu>
+				<Contraseña>javi</Contraseña>
+				<Correo>javi@gmail.com</Correo>
+				<Id_hotel>00098</Id_hotel>
+				<datos>
+					<Nombre>Javier</Nombre>
+					<DNI>00001245P</DNI>
+					<Telefono>999888111</Telefono>
+					<Cod_Reserva>55555</Cod_Reserva>
+					<ID_Cliente>03330</ID_Cliente>
+				</datos>
+				<reservas>
+					<Nom_Cliente>Javier</Nom_Cliente>
+					<Cod_Reserva>55555</Cod_Reserva>
+					<Fech_Reserva>2023-05-04</Fech_Reserva>
+					<Fech_Alqui>2023-05-03</Fech_Alqui>
+					<Fech_Dev>2023-05-09</Fech_Dev>
+					<Num_Habitacion>33</Num_Habitacion>
+					<id_emple>00101</id_emple>
+				</reservas>
+			</user>
+		
+			<user tipo="cliente">
+				<Cod_Usu>99999</Cod_Usu>
+				<Contraseña>bert</Contraseña>
+				<Correo>berta@gmail.com</Correo>
+				<Id_hotel>00505</Id_hotel>
+
+				<datos>
+					<Nombre>Berta</Nombre>
+					<DNI>99998887P</DNI>
+					<Telefono>000666777</Telefono>
+					<Cod_Reserva>99909</Cod_Reserva>
+					<ID_Cliente>99999</ID_Cliente>
+				</datos>
+
+				<reserva>
+					<Nom_Cliente>Berta</Nom_Cliente>
+					<Cod_Reserva>99909</Cod_Reserva>
+					<Fech_Reserva>2023-05-04</Fech_Reserva>
+					<Fech_Alqui>2023-05-03</Fech_Alqui>
+					<Fech_Dev>2023-05-11</Fech_Dev>
+					<Num_Habitacion>23</Num_Habitacion>
+					<id_emple>00222</id_emple>
+				</reserva>
+			</user>	
+		</usuarios>	
+</hoteles>
